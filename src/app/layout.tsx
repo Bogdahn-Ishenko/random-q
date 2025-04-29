@@ -42,6 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
+      <title>random-q</title>
       <body>
         <StyledComponentsRegistry>
           <Provider store={store}>
