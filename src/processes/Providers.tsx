@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryStreamedHydration } from '@tanstack/react-query-next-experimental';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import React from 'react';
 
 function makeQueryClient() {
@@ -28,7 +27,6 @@ export function Providers(props: { children: React.ReactNode }) {
       <ReactQueryStreamedHydration>
         {props.children}
       </ReactQueryStreamedHydration>
-      <ReactQueryDevtools initialIsOpen={true} />
     </QueryClientProvider>
   );
 }
