@@ -32,6 +32,22 @@ const Button = styled.button`
   user-select: none;
 `;
 
+const TechNoImage = styled.span`
+  display: flex;
+  width: 96px;
+  height: 96px;
+  background: #eee;
+  color: #333;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+`;
+
 /**
  * Компонент кнопки технологии
  * @param props.arrTech - Информация о технологии
@@ -83,23 +99,9 @@ export default function TechButton({
           onError={() => setImgError(true)}
         />
       ) : (
-        <span
-          style={{
-            display: 'inline-block',
-            width: 96,
-            height: 96,
-            background: '#eee',
-            color: '#333',
-            textAlign: 'center',
-            lineHeight: '96px',
-            borderRadius: '8px',
-            fontWeight: 'bold',
-            cursor: 'pointer',
-          }}
-          aria-label={`Web-технология: ${arrTech.techName}`}
-        >
+        <TechNoImage aria-label={`Web-технология: ${arrTech.techName}`}>
           {arrTech.techName}
-        </span>
+        </TechNoImage>
       )}
     </Button>
   );
