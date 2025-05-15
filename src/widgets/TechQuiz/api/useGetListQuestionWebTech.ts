@@ -6,7 +6,7 @@ import { get, ref } from 'firebase/database';
  * - framework: Вопросы по фреймворкам
  * - language: Вопросы по языкам программирования
  */
-export type Category = 'framework' | 'language';
+export type Category = 'framework' | 'language' | 'softskills';
 
 /**
  * Определяет поддерживаемые технологии
