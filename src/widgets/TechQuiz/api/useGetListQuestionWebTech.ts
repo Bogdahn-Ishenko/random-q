@@ -12,7 +12,7 @@ export type Category = 'framework' | 'language';
  * Определяет поддерживаемые технологии
  * Включает React, JavaScript и TypeScript
  */
-export type TechName = 'React' | 'JavaScript' | 'TypeScript';
+export type TechName = 'React' | 'JavaScript' | 'TypeScript' | 'HRInterview';
 
 /**
  * Описывает структуру выбора категории и технологий
