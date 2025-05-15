@@ -70,6 +70,7 @@ const arrTechsStatic: ArrTech[] = [
   { techName: 'JavaScript', category: 'language', color: '#f7df1e' },
   { techName: 'TypeScript', category: 'language', color: '#1976d2' },
   { techName: 'React', category: 'framework', color: '#087ea4' },
+  { techName: 'HR Interview', category: 'softskills', color: '#B2DFDB' },
 ];
 
 /**
